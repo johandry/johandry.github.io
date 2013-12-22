@@ -1,0 +1,140 @@
+html, body	{ height: 100%; }
+.root		{ margin: 0px auto; width: 1003px; min-height: 200px; }
+.vbox		{ width: 100%; float: none; position: relative; }
+.hbox		{ min-height: 100%; float: left; position: relative; }
+
+a img		{ border: none; }
+
+.clear	{
+	display: block; float: none; clear: both; border: none; padding: 0px; margin: 0px;
+	visibility: hidden; font-size: 1px; line-height: 1px;
+}
+
+.wb-state-highlight	{ background: url("../img/hlight_bg.png") repeat left top; }
+
+.wb_container	{ position: relative; z-index: 2; }
+#wb_header	{ position: relative; z-index: 3; }
+
+.wb_sbg		{
+	position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;
+	z-index: 1;
+}
+
+.wb_element	{
+	position: absolute !important; min-height: 64px; min-width: 64px; left: 0px; top: 0px;
+	padding: 0px; margin: 0px; display: block; overflow: visible;
+}
+
+.wb_table	{ border: none; border-collapse: collapse; }
+.wb_table td	{ border: 1px solid #000; }
+
+.wb_button	{
+	display: block; padding: 0px; margin: 0px; text-align: center; text-decoration: none;
+	cursor: pointer;
+}
+.wb_button,
+.wb_button:hover,
+.wb_button:active,
+.wb_button:focus,
+.wb_button:visited	{ outline: none !important; }
+.wb_button span	{ display: block; padding: 0px; margin: 0px; }
+
+.vmenu,
+.hmenu		{
+	display: block; list-style-type: none; padding: 0px; margin: 0px; width: 100%;
+	height: 100%; float: left; overflow: visible;
+}
+.hmenu { white-space: nowrap; }
+.vmenu li,
+.hmenu li		{ display: block; display: inline-block; padding: 0px; margin: 0px; }
+.vmenu li		{ clear: both; }
+.vmenu li a,
+.hmenu li a	{ display: block; }
+.vmenu ul,
+.hmenu ul	{ display: none; position: absolute; margin-left: 0; }
+.vmenu ul li,
+.hmenu ul li	{ display: block; }
+.vmenu li    { display: block; float: left; clear: left; }
+
+/* Default gallery styles */
+.wb_gallery			{ background: #000; width: 100%; height: 100%; overflow: hidden; }
+#wb_gedit_name		{ width: 315px; }
+#wb_gedit_images	{
+	width: 466px; height: 300px; overflow: auto; overflow-y: scroll; background: #ffffff;
+}
+#wb_gedit_uploader	{ width: 120px; height: 64px; float: left; }
+#wb_gedit_uploader_state {
+	width: 336px; height: 64px; float: left; margin-left: 10px; overflow: auto;
+}
+.wb_gallery_empty	{
+	background: #ffffff url("../img/gallery.empty.gif") no-repeat center center;
+}
+
+.gallery-image		{ background: white; padding: 5px; }
+
+.wb_thumb			{ float: left; padding: 3px; }
+.wb_thumb img		{ max-width: none !important; }
+.wb_thumb div			{ border: 1px solid #888; }
+
+.gallery-slideshow  	{ width: 100%; height: 100%; }
+.gallery-slide-image{ width: 100%; height: 100%; }
+.gallery-slide-left	{
+	background: url("../img/gallery.left.png") no-repeat center center;
+	position: absolute; width: 32px; height: 32px; cursor: pointer;
+	text-decoration: none; display: block; outline: none !important;
+}
+.gallery-slide-right{
+	background: url("../img/gallery.right.png") no-repeat center center;
+	position: absolute; width: 32px; height: 32px; cursor: pointer;
+	text-decoration: none; display: block; outline: none !important;
+}
+.gallery-slide-left:hover	{ background-image: url("../img/gallery.left_h.png"); }
+.gallery-slide-right:hover	{ background-image: url("../img/gallery.right_h.png"); }
+
+.gallery-list		{ }
+.gallery-list-image	{ }
+.gallery-list-left	{ background: url(../img/gallery.left.png) no-repeat center center; }
+.gallery-list-thumbs{ }
+.gallery-list-right	{ background: url(../img/gallery.right.png) no-repeat center center; }
+.gallery-list .tmb-selected	{ background: #888; }
+
+#skypedetectionswf	{ position: absolute; left: -1000px; top: -1000px; }
+
+.wb_form			{
+	padding: 0px; margin: 0px; display: block; border: none; width: 100%; height: 100%;
+}
+.wb_form table		{
+	padding: 0px; margin: 0px; border: none; border-collapse: collapse;
+	width: 100%; height: 100%;
+}
+.wb_form table th,
+.wb_form table td		{ padding: 0px; margin: 0px; border: none; border-collapse: collapse; text-align: left; }
+.wb_form table th:not([class]) 	{ font-size: 13px; }
+.wb_comments textarea.hpc,
+.wb_form textarea.hpc	{
+	font-size: 1px; line-height: 1px; width: 1px; height: 1px; padding: 0px; margin: 0px;
+	border: none; display: block; background: transparent; color: #ffffff; opacity: 0;
+	filter: alpha(opacity=0); position: absolute; left: -10px; top: -10px;
+}
+.wb_comments		{ width: 500px; margin: 0px auto; }
+.wb_comment			{
+	display: block; border-top: 1px solid #ccc; padding: 6px 2px; clear: both;
+	position: relative;
+}
+.wb_comment_user	{
+	font-size: 18px; color: #007499; font-family: Arial,sans-serif; margin-bottom: 6px;
+}
+.wb_comment_date	{
+	font-size: 10px; color: #999; font-family: Arial,sans-serif;
+}
+.wb_comment_text	{
+	font-size: 13px; color: black; font-family: Arial,sans-serif;
+}
+
+.wb_footer { padding-bottom: 20px; }
+
+i.icon-wb-logo {
+	background-image: url("../img/icon-logo.png") !important;
+	background-position: 0px 0px;
+	width: 22px; height: 22px; margin: -3px 0px 0px 0px;
+}

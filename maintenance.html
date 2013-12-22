@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Home</title>
+	<meta name="viewport" content="width=1005" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	<style type="text/css">
+		body { background: #e3e3e3 none no-repeat scroll left top; }
+		.wb_sbg { background: transparent none repeat-x scroll left top; }
+		.wb-stl-pagetitle { font: normal bold 30px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #424242; line-height: 30px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
+		.wb-stl-pagetitle a { font: normal bold 30px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 30px; font-weight: normal; font-style: normal; }
+		.wb-stl-pagetitle a:hover { font: normal bold 30px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 30px; font-weight: normal; font-style: normal; }
+		.wb-stl-pagetitle ul { list-style-image: url('null'); }
+		.wb-stl-subtitle { font: normal bold 72px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #424242; line-height: 60px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
+		.wb-stl-subtitle a { font: normal bold 72px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 60px; font-weight: normal; font-style: normal; }
+		.wb-stl-subtitle a:hover { font: normal bold 72px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 60px; font-weight: normal; font-style: normal; }
+		.wb-stl-subtitle ul { list-style-image: url('null'); }
+		.wb-stl-heading1 { font: normal bold 30px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #424242; line-height: normal; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
+		.wb-stl-heading1 a { font: normal bold 30px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
+		.wb-stl-heading1 a:hover { font: normal bold 30px Arial,Helvetica,sans-serif; text-align: left; text-decoration: underline; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
+		.wb-stl-heading1 ul { list-style-image: url('null'); }
+		.wb-stl-heading2 { font: normal normal 24px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
+		.wb-stl-heading2 a { font: normal normal 24px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
+		.wb-stl-heading2 a:hover { font: normal normal 24px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
+		.wb-stl-heading2 ul { list-style-image: url('null'); }
+		.wb-stl-heading3 { font: normal normal 18px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #3b3b3b; line-height: normal; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
+		.wb-stl-heading3 a { font: normal normal 18px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
+		.wb-stl-heading3 a:hover { font: normal normal 18px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
+		.wb-stl-heading3 ul { list-style-image: url('null'); }
+		.wb-stl-normal { font: normal normal 14px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #969696; line-height: 24px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
+		.wb-stl-normal a { font: normal normal 14px Arial,Helvetica,sans-serif; text-align: left; text-decoration: underline; color: #000000; line-height: 24px; font-weight: bold; font-style: normal; }
+		.wb-stl-normal a:hover { font: normal normal 14px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 24px; font-weight: bold; font-style: normal; }
+		.wb-stl-normal ul { list-style-image: url('null'); }
+		.wb-stl-highlight { font: normal bold 24px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #ff9d00; line-height: normal; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
+		.wb-stl-highlight a { font: normal bold 24px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
+		.wb-stl-highlight a:hover { font: normal bold 24px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
+		.wb-stl-highlight ul { list-style-image: url('null'); }
+		.wb-stl-special { font: normal normal 18px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 55px; margin: 0px 0px 20px 0px; padding: 0px 0px 0px 0px; }
+		.wb-stl-special a { font: normal normal 18px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 55px; font-weight: normal; font-style: normal; }
+		.wb-stl-special a:hover { font: normal normal 18px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 55px; font-weight: normal; font-style: normal; }
+		.wb-stl-special ul { list-style-image: url('null'); }
+		.wb-stl-footer { font: normal normal 12px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #969696; line-height: normal; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
+		.wb-stl-footer a { font: normal normal 12px Arial,Helvetica,sans-serif; text-align: left; text-decoration: underline; color: #969696; line-height: normal; font-weight: normal; font-style: normal; }
+		.wb-stl-footer a:hover { font: normal normal 12px Arial,Helvetica,sans-serif; text-align: left; text-decoration: none; color: #969696; line-height: normal; font-weight: normal; font-style: normal; }
+		.wb-stl-footer ul { list-style-image: url('null'); }
+		body, .wb_sbg { min-width: 1003px; }
+	</style>
+	<link href="css/site.css?v=1.0.3" rel="stylesheet" type="text/css" />
+		
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+<body><div class="root" style="width: 1003px; height: 789px;"><div class="vbox wb_container" id="wb_header" style="height: 109px; background: transparent none repeat scroll left top;">
+	
+<div id="wb_element_instance1" class="wb_element" style="left: 160px; top: 30px; width: 310px; height: 60px; min-width: 310px; min-height: 60px; z-index: 19;  line-height: normal;"><h4 class="wb-stl-pagetitle">Johandry's</h4><h4 class="wb-stl-pagetitle">Projects &amp; Thoughts</h4>
+</div><div id="wb_element_instance2" class="wb_element" style="left: 34px; top: 17px; width: 119px; height: 86px; min-width: 119px; min-height: 86px; z-index: 20;"><img alt="" src="gallery/1a30804f0ba63955ccefb2d6470b33f4_119x86.png" style="width: 119px; height: 86px;"></div></div>
+<div class="vbox wb_container" id="wb_main" style="height: 480px; background: #ffffff none repeat scroll left top; padding: 0 0 120px 0;">
+	
+<div id="wb_element_instance3" class="wb_element" style="left: 520px; top: 106px; width: 288px; height: 374px; min-width: 288px; min-height: 374px; z-index: 23;  line-height: normal;"><h5 class="wb-stl-subtitle">We<br>
+are<br>
+opening<br>
+soon</h5>
+
+<p> </p>
+
+<p> </p>
+
+<h1 class="wb-stl-heading1">Contact me</h1>
+
+<p class="wb-stl-normal"><a href="http://about.me/johandry">http://about.me/johandry</a></p>
+
+<p class="wb-stl-normal"><a data-type="email" data-url="johandry@gmail.com" href="mailto:johandry@gmail.com">johandry@gmail.com</a></p>
+</div><div id="wb_element_instance4" class="wb_element" style="left: 173px; top: 105px; width: 224px; height: 224px; min-width: 224px; min-height: 224px; z-index: 38;"><img alt="" src="gallery/6d652e80242527fb60d4f0dc1d0c5a62_224x224.png" style="width: 224px; height: 224px;"></div><div id="wb_element_instance5" class="wb_element" style="left: 0px; top: 500px; min-width: 0px; min-height: 0px; z-index: 9000; width: 100%;">
+			</div></div>
+<div class="vbox wb_container" id="wb_footer" style="height: 118px; background: transparent none repeat scroll left top;">
+	
+<div id="wb_element_instance0" class="wb_element" style="left: 854px; top: 14px; width: 100px; height: 24px; min-width: 100px; min-height: 24px; z-index: 45;"><div class="wb-stl-footer" style="white-space: nowrap;">Powered by </div></div></div><div class="wb_sbg" style="min-height: 789px;"></div></div></body>
+</html>
