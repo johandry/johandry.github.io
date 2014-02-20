@@ -1,140 +1,893 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Home</title>
-	<meta name="viewport" content="width=1005" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
-	<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript"></script>
-	<style type="text/css">
-		body { background: transparent url("gallery/96846eeb25425149b575b03b0f1c4d79.jpg") repeat-x scroll center top; }
-		.wb_sbg { background: transparent url("gallery/031a511a53ecafd97295833f36c013fe.png") repeat-x scroll center top; }
-		.wb-stl-pagetitle { font: normal bold 40px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #ffffff; line-height: 40px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
-		.wb-stl-pagetitle a { font: normal bold 40px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 40px; font-weight: normal; font-style: normal; }
-		.wb-stl-pagetitle a:hover { font: normal bold 40px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 40px; font-weight: normal; font-style: normal; }
-		.wb-stl-pagetitle ul { list-style-image: url('null'); }
-		.wb-stl-subtitle { font: normal bold 12px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 16px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
-		.wb-stl-subtitle a { font: normal bold 12px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 16px; font-weight: normal; font-style: normal; }
-		.wb-stl-subtitle a:hover { font: normal bold 12px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 16px; font-weight: normal; font-style: normal; }
-		.wb-stl-subtitle ul { list-style-image: url('null'); }
-		.wb-stl-heading1 { font: normal normal 30px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #596260; line-height: 24px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
-		.wb-stl-heading1 a { font: normal normal 30px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 24px; font-weight: normal; font-style: normal; }
-		.wb-stl-heading1 a:hover { font: normal normal 30px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 24px; font-weight: normal; font-style: normal; }
-		.wb-stl-heading1 ul { list-style-image: url('null'); }
-		.wb-stl-heading2 { font: normal normal 23px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #596260; line-height: normal; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
-		.wb-stl-heading2 a { font: normal normal 23px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
-		.wb-stl-heading2 a:hover { font: normal normal 23px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
-		.wb-stl-heading2 ul { list-style-image: url('null'); }
-		.wb-stl-heading3 { font: normal normal 15px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #596260; line-height: normal; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
-		.wb-stl-heading3 a { font: normal normal 15px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
-		.wb-stl-heading3 a:hover { font: normal normal 15px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
-		.wb-stl-heading3 ul { list-style-image: url('null'); }
-		.wb-stl-normal { font: normal normal 12px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #596260; line-height: 19px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
-		.wb-stl-normal a { font: normal normal 12px Trebuchet MS,sans-serif; text-align: left; text-decoration: underline; color: #000000; line-height: 19px; font-weight: bold; font-style: normal; }
-		.wb-stl-normal a:hover { font: normal normal 12px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 19px; font-weight: bold; font-style: normal; }
-		.wb-stl-normal ul { list-style-image: url('null'); }
-		.wb-stl-highlight { font: normal normal 35px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
-		.wb-stl-highlight a { font: normal normal 35px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
-		.wb-stl-highlight a:hover { font: normal normal 35px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
-		.wb-stl-highlight ul { list-style-image: url('null'); }
-		.wb-stl-special { font: normal bold 14px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #ffffff; line-height: normal; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
-		.wb-stl-special a { font: normal bold 14px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
-		.wb-stl-special a:hover { font: normal bold 14px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: normal; font-weight: normal; font-style: normal; }
-		.wb-stl-special ul { list-style-image: url('null'); }
-		.wb-stl-footer { font: normal normal 16px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #ffffff; line-height: normal; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
-		.wb-stl-footer a { font: normal normal 16px Trebuchet MS,sans-serif; text-align: left; text-decoration: underline; color: #ffffff; line-height: normal; font-weight: bold; font-style: normal; }
-		.wb-stl-footer a:hover { font: normal normal 16px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #ffffff; line-height: normal; font-weight: bold; font-style: normal; }
-		.wb-stl-footer ul { list-style-image: url('null'); }
-		body, .wb_sbg { min-width: 1003px; }
-		#wb_element_instance0 ul { background: transparent none repeat scroll left top; border: 1px none #000000; text-align: left; }
-		#wb_element_instance0 ul ul { background: #2e2e2e none repeat scroll left top; }
-		#wb_element_instance0 li { margin: 10px 10px 10px 10px; }
-		#wb_element_instance0 li a { text-transform: none; border: 0px none #000000; padding: 13px 20px 14px 20px; font: normal bold 13px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #000000; line-height: 15px; background: transparent none repeat scroll left top; }
-		#wb_element_instance0 li a:hover { border: 0px none #000000; font: normal bold 13px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #ffffff; line-height: 15px; background: #000000 none no-repeat scroll center bottom; }
-		#wb_element_instance0 li.active > a { border: 0px none #000000; font: normal bold 13px Trebuchet MS,sans-serif; text-align: left; text-decoration: none; color: #ffffff; line-height: 15px; background: #000000 none no-repeat scroll center bottom; }
-		#wb_element_instance11 a { width: 100%; height: 100%; font-family: Helvetica,Arial,sans-serif; font-size: 14px; text-align: center; border: 1px solid #cccccc; border-radius: 6px; -webkit-border-radius: 6px; -moz-border-radius: 6px; color: #000000; font-style: normal; font-weight: normal; text-decoration: none; background: #ffbd23 none repeat scroll left top; }
-		#wb_element_instance11 a:hover { color: #ffffff; font-style: normal; font-weight: normal; text-decoration: none; background: #ffbd23 none repeat scroll left top; }
-		#wb_element_instance11 a:active { color: #ffffff; font-style: normal; font-weight: normal; text-decoration: none; background: #ffbd23 none repeat scroll left top; }
-		#wb_element_instance11 a span { padding: 14px 0px 0px 0px; }
-		#wb_element_instance12 a { width: 100%; height: 100%; font-family: Helvetica,Arial,sans-serif; font-size: 14px; text-align: center; border: 1px solid #cccccc; border-radius: 6px; -webkit-border-radius: 6px; -moz-border-radius: 6px; color: #000000; font-style: normal; font-weight: normal; text-decoration: none; background: #ffbd23 none repeat scroll left top; }
-		#wb_element_instance12 a:hover { color: #ffffff; font-style: normal; font-weight: normal; text-decoration: none; background: #ffbd23 none repeat scroll left top; }
-		#wb_element_instance12 a:active { color: #ffffff; font-style: normal; font-weight: normal; text-decoration: none; background: #ffbd23 none repeat scroll left top; }
-		#wb_element_instance12 a span { padding: 14px 0px 0px 0px; }
-		#wb_element_instance13 a { width: 100%; height: 100%; font-family: Helvetica,Arial,sans-serif; font-size: 14px; text-align: center; border: 1px solid #cccccc; border-radius: 6px; -webkit-border-radius: 6px; -moz-border-radius: 6px; color: #000000; font-style: normal; font-weight: normal; text-decoration: none; background: #ffbd23 none repeat scroll left top; }
-		#wb_element_instance13 a:hover { color: #ffffff; font-style: normal; font-weight: normal; text-decoration: none; background: #ffbd23 none repeat scroll left top; }
-		#wb_element_instance13 a:active { color: #ffffff; font-style: normal; font-weight: normal; text-decoration: none; background: #ffbd23 none repeat scroll left top; }
-		#wb_element_instance13 a span { padding: 14px 0px 0px 0px; }
-		#wb_element_instance20 a { width: 100%; height: 100%; font-family: Helvetica,Arial,sans-serif; font-size: 14px; text-align: center; border: 1px solid #cccccc; border-radius: 6px; -webkit-border-radius: 6px; -moz-border-radius: 6px; color: #000000; font-style: normal; font-weight: normal; text-decoration: none; background: #ffbd23 none repeat scroll left top; }
-		#wb_element_instance20 a:hover { color: #ffffff; font-style: normal; font-weight: normal; text-decoration: none; background: #ffbd23 none repeat scroll left top; }
-		#wb_element_instance20 a:active { color: #ffffff; font-style: normal; font-weight: normal; text-decoration: none; background: #ffbd23 none repeat scroll left top; }
-		#wb_element_instance20 a span { padding: 14px 0px 0px 0px; }
-	</style>
-	<link href="css/site.css?v=1.0.3" rel="stylesheet" type="text/css" />
+<html>
+	<head>
+		<!-- Title here -->
+		<title>Johandry Amador</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Johandry Amador webpage with blogs, projects, resume and contact information.">
+		<meta name="keywords" content="Johandry, Amador, Segui, johandry.com, blog.johandry.com">
+		<meta name="author" content="Johandry Amador">
 		
-	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
-
-
-<body><div class="root" style="width: 1003px; height: 1320px;"><div class="vbox wb_container" id="wb_header" style="height: 501px; background: transparent none repeat scroll left top;">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Inder' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">	
+		<!-- Pretty Photo -->
+		<link href="css/prettyPhoto.css" rel="stylesheet">
+		<!-- Animate -->
+		<link href="css/animate.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
 	
-<div id="wb_element_instance0" class="wb_element" style="left: 447px; top: 20px; width: 540px; height: 60px; min-width: 540px; min-height: 60px; z-index: 269;"><script type="text/javascript">
-				$(function() {
-					$("#wb_element_instance0").children("ul").children().each(function() {
-						if ($(this).children("ul").size() == 0) return;
-						$(this).hover(function() {
-							$(this).children("ul").css({display: "block"});
-						}, function() {
-							$(this).children("ul").css({display: "none"});
-						});
-					});
-				});
-			</script><ul class="hmenu"><li class="active"><a href="/" target="_self" title="HOME">HOME</a></li><li><a href="projects.html" target="_self" title="PROJECTS">PROJECTS</a></li><li><a href="blogs.html" target="_self" title="BLOGS">BLOGS</a></li><li><a href="http://about.me/johandry/" target="_self" title="ABOUT">ABOUT</a></li><li><a href="contact.html" target="_self" title="CONTACT">CONTACT</a></li></ul></div><div id="wb_element_instance3" class="wb_element" style="left: 19px; top: 122px; width: 960px; height: 378px; min-width: 960px; min-height: 378px; z-index: 58;"><img alt="" src="gallery/8442378b3d0b1528b87955e666dbad09_960x378.jpg" style="width: 960px; height: 378px;"></div><div id="wb_element_instance4" class="wb_element" style="left: 19px; top: 195px; width: 322px; height: 139px; min-width: 322px; min-height: 139px; z-index: 63;  line-height: normal;"><p class="wb-stl-normal"><font color="#000000"><span style="font-size: 35px; line-height: normal;">Johandry's</span></font></p>
-
-<p class="wb-stl-normal"><font color="#000000"><span style="font-size: 35px; line-height: normal;">Projects &amp; Thoughts</span></font></p>
-
-<p class="wb-stl-normal">Enthusiast Unix Administrator, Developer and Project Manager. This site is a gateway to some of my working projects, blogs and other cool stuff.</p>
-</div><div id="wb_element_instance5" class="wb_element" style="left: 20px; top: 10px; width: 100px; height: 100px; min-width: 100px; min-height: 100px; z-index: 70;"><img alt="" src="gallery/b830e6364d5da23de5da2d7b6f603d2c_100x100.jpg" style="width: 100px; height: 100px;"></div><div id="wb_element_instance6" class="wb_element" style="left: 450px; top: 90px; width: 540px; height: 30px; min-width: 540px; min-height: 30px; z-index: 42;"><div id="wb_element_instance6_toolbox" style="width: 540px; height: 30px;"><a id="wb_element_instance6_facebook" class="addthis_button_facebook" style="float: left;"></a><a id="wb_element_instance6_twitter" class="addthis_button_twitter" style="float: left; margin-left: 4px;"></a><a id="wb_element_instance6_email" class="addthis_button_email" style="float: left; margin-left: 4px;"></a><a id="wb_element_instance6_google" class="addthis_button_google" style="float: left; margin-left: 4px;"></a><a id="wb_element_instance6_facebook_like" class="addthis_button_facebook_like" style="float: left; margin-left: 4px;"></a><a id="wb_element_instance6_tweet" class="addthis_button_tweet" style="float: left; margin-left: 4px;"></a></div><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#"></script><script type="text/javascript">
-				if (window.addthis) { addthis.toolbox("#wb_element_instance6_toolbox"); }
-			</script></div></div>
-<div class="vbox wb_container" id="wb_main" style="height: 749px; background: transparent none repeat-x scroll left top; padding: 0 0 50px 0;">
-	
-<div id="wb_element_instance7" class="wb_element" style="left: 19px; top: 36px; width: 174px; height: 24px; min-width: 174px; min-height: 24px; z-index: 13;  line-height: normal;"><h1 class="wb-stl-heading1">Projects</h1>
-</div><div id="wb_element_instance8" class="wb_element" style="left: 825px; top: 79px; width: 140px; height: 24px; min-width: 140px; min-height: 24px; z-index: 14;  line-height: normal;"><h3 class="wb-stl-heading3">Perl on Dancer Blog</h3>
-</div><div id="wb_element_instance9" class="wb_element" style="left: 579px; top: 79px; width: 90px; height: 24px; min-width: 90px; min-height: 24px; z-index: 21;  line-height: normal;"><h3 class="wb-stl-heading3">Personal Blog</h3>
-</div><div id="wb_element_instance10" class="wb_element" style="left: 333px; top: 80px; width: 64px; height: 24px; min-width: 64px; min-height: 24px; z-index: 23;  line-height: normal;"><h3 class="wb-stl-heading3">Scripting</h3>
-</div><div id="wb_element_instance11" class="wb_element" style="left: 829px; top: 278px; width: 130px; height: 50px; min-width: 130px; min-height: 50px; z-index: 24;"><a class="wb_button" href="http://"><span>Read more</span></a></div><div id="wb_element_instance12" class="wb_element" style="left: 559px; top: 278px; width: 130px; height: 50px; min-width: 130px; min-height: 50px; z-index: 27;"><a class="wb_button" href="http://"><span>Read more</span></a></div><div id="wb_element_instance13" class="wb_element" style="left: 299px; top: 280px; width: 130px; height: 50px; min-width: 130px; min-height: 50px; z-index: 28;"><a class="wb_button" href="http://"><span>Read more</span></a></div><div id="wb_element_instance14" class="wb_element" style="left: 540px; top: 36px; width: 130px; height: 24px; min-width: 130px; min-height: 24px; z-index: 29;  line-height: normal;"><h1 class="wb-stl-heading1">Thoughts</h1>
-</div><div id="wb_element_instance15" class="wb_element" style="left: 799px; top: 120px; width: 190px; height: 130px; min-width: 190px; min-height: 130px; z-index: 30;"><img alt="" src="gallery/839b5756b1035a69f0349f7e8ebcca77_190x130.jpg" style="width: 190px; height: 130px;"></div><div id="wb_element_instance16" class="wb_element" style="left: 20px; top: 120px; width: 170px; height: 130px; min-width: 170px; min-height: 130px; z-index: 31;"><img alt="" src="gallery/cd288e262564acdbd1892e23bbebb5a0_170x130.png" style="width: 170px; height: 130px;"></div><div id="wb_element_instance17" class="wb_element" style="left: 300px; top: 126px; width: 120px; height: 120px; min-width: 120px; min-height: 120px; z-index: 32;"><img alt="" src="gallery/2a5a5c9ad6be7574c647752ae705499b_120x120.png" style="width: 120px; height: 120px;"></div><div id="wb_element_instance18" class="wb_element" style="left: 540px; top: 119px; width: 170px; height: 130px; min-width: 170px; min-height: 130px; z-index: 33;"><img alt="" src="gallery/dd2bf24699948a5cfc55e88b77c13ac5_170x130.jpg" style="width: 170px; height: 130px;"></div><div id="wb_element_instance19" class="wb_element" style="left: 19px; top: 389px; width: 540px; height: 360px; min-width: 540px; min-height: 360px; z-index: 34;"><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script><script type="text/javascript">
-			setTimeout(function() {
-				twttr.widgets.createTimeline(
-		    		"261185754519175168",
-			    	document.getElementById("wb_element_instance19"),
-			    	function (el) { },
-			    	{
-						theme: "light",
-			    		chrome: "",
-			    		width: 540,
-			    		height: 360,
-						tweetLimit: "3",
-						borderColor: "transparent",
-						linkColor: "transparent"
-					}
-			    );
-			}, 500);
-			</script></div><div id="wb_element_instance20" class="wb_element" style="left: 40px; top: 280px; width: 130px; height: 50px; min-width: 130px; min-height: 50px; z-index: 35;"><a class="wb_button" href="http://"><span>Read more</span></a></div><div id="wb_element_instance21" class="wb_element" style="left: 35px; top: 80px; width: 120px; height: 24px; min-width: 120px; min-height: 24px; z-index: 22;  line-height: normal;"><h3 class="wb-stl-heading3">Web Applications</h3>
-</div><div id="wb_element_instance22" class="wb_element" style="left: 20px; top: 356px; width: 170px; height: 24px; min-width: 170px; min-height: 24px; z-index: 36;  line-height: normal;"><h1 class="wb-stl-heading1">What's new?</h1>
-</div><div id="wb_element_instance23" class="wb_element" style="left: 0px; top: 769px; min-width: 0px; min-height: 0px; z-index: 9000; width: 100%;">
-			</div></div>
-
-</div>
-<div class="wb_sbg" style="min-height: 1320px;"></div>
-</div></body>
+	<body>
+			<!--Navigation Bar with Arbitary Anchor -->
+				<div class="navigation">
+					<div class="nav-list  br-white">
+						<ul>
+							<li><a href="#.home">Home</a></li><!-- Link -->
+							<li><a href="#.works">Works</a></li><!-- Link -->
+							<li><a href="#.status">Status</a></li><!-- Link -->
+							<li><a href="#.service">Portfolio</a></li><!-- Link -->
+							<li><a href="#.testimonials">Testimonials</a></li><!-- Link -->
+							<li><a href="#.contact">Contact</a></li><!-- Link -->
+							<li><a href="resume.html">Resume</a></li><!-- Link -->
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Home class for Arbitary Anchor -->
+						<span class="home"></span>
+				
+			<!--Navigation Bar Ends -->
+		<div class="container">	
+			<!-- Header Starts -->
+				<header class="block text-center">
+					<!-- Small Title at Top -->
+					<h5>--------&nbsp;&nbsp;Welcome To my Site&nbsp;&nbsp;--------</h5>
+					<!-- Heading Part -->
+					<h1 class="main-head animated">JOHANDRY AMADOR</h1>
+					<!-- Sub Title -->
+					<h2>I am a Unix <label>Geek</label><span class="red">.</span></h2>
+					<!-- Head Title --> 
+					<div class="head-bar">
+						<div class="row">
+							<div class="col-md-5 col-xs-5">
+								<div class="head-item text-center head-left animated">
+									<!-- Heading -->
+									<h3>Unix</h3> 
+									<!-- Sub Heading -->
+									<h4>Administrator</h4>
+								</div>
+							</div>
+							<div class="col-md-2 col-xs-2">
+								<div class="head-item text-center head-bottom animated">
+									<!-- & Symbol used -->
+									<h6 class="red"> &amp; </h6>
+								</div>
+							</div>
+							<div class="col-md-5 col-xs-5">
+								<div class="head-item text-center head-right animated">
+									<!-- Heading -->
+									<h3>Unix</h3>
+									<!-- Sub Heading -->
+									<h4>Developer</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Header Paragraph -->
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+					<!-- Technology Block Links -->
+					<div class="technology">
+						<h4>Skills :&nbsp;&nbsp;</h4>
+						<span class="br-red">HTML </span>&nbsp;&nbsp;
+						<span class="br-lblue">CSS </span>&nbsp;&nbsp;
+						<span class="br-green">JQuery </span>&nbsp;&nbsp;
+						<span class="br-orange">My SQL </span>
+					</div>
+					<!-- Head Button -->
+					<div class="head-button">
+						<div class="btn-group">
+						  <!-- Button with Icon -->	
+						  <a href="#" class="btn btn-default"><i class="fa fa-download"></i></a>
+						  <!-- Button -->
+						  <a href="#" class="btn btn-default">Download Resume</a>
+						</div>
+						<div class="btn-group">
+						  <a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
+						  <a href="#" class="btn btn-default">Print Resume</a>
+						</div>
+					</div>
+				</header>
+			
+			<!-- Header Ends -->
+			
+			
+			<!-- Works Starts -->
+				<div class="works block text-center">
+					<!-- Block Heading -->
+					<div class="block-head">
+						<h2>WORK</h2>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+					</div>
+					<!-- Pretty Photo Used -->  
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<!-- Row Starts-->
+							<div class="works-item animated">
+								<!-- Link -->
+								<a href="img/works/1.jpg"  class="prettyphoto">
+									<!-- Image -->
+									<img src="img/works/tn1.jpg" class="img-responsive img-thumbnail" alt=""/>
+								</a>
+								<!-- Pretty Photo Icon Links -->
+								<div class="works-social">
+									<!-- Search icon -->
+									<a href="img/works/1.jpg" class="prettyphoto"><i class="fa fa-search br-red"></i></a>
+									<!-- Link Icon -->
+									<a href="#"><i class="fa fa-link br-black"></i></a>
+								</div>
+								<h4>Lenord</h4>
+								<p>Contrary to popular belief, Lorem Ipsum is not simple.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="works-item animated">
+								<a href="img/works/2.jpg"  class="prettyphoto">
+									<img src="img/works/tn2.jpg" class="img-responsive img-thumbnail" alt=""/>
+								</a>
+								<div class="works-social">
+									<a href="img/works/2.jpg" class="prettyphoto"><i class="fa fa-search br-red"></i></a>
+									<a href="#"><i class="fa fa-link br-black"></i></a>
+								</div>
+								<h4>Sheldon</h4>
+								<p>Contrary to popular belief, Lorem Ipsum is not simple.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="works-item animated">
+								<a href="img/works/3.jpg"  class="prettyphoto">
+									<img src="img/works/tn3.jpg" class="img-responsive img-thumbnail" alt=""/>
+								</a>
+								<div class="works-social">
+									<a href="img/works/3.jpg" class="prettyphoto"><i class="fa fa-search br-red"></i></a>
+									<a href="#"><i class="fa fa-link br-black"></i></a>
+								</div>
+								<h4>Boxcol</h4>
+								<p>Contrary to popular belief, Lorem Ipsum is not simple.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="works-item animated">
+								<a href="img/works/4.jpg"  class="prettyphoto">
+									<img src="img/works/tn4.jpg" class="img-responsive img-thumbnail" alt=""/>
+								</a>
+								<div class="works-social">
+									<a href="img/works/tn4.jpg" class="prettyphoto"><i class="fa fa-search br-red"></i></a>
+									<a href="#"><i class="fa fa-link br-black"></i></a>
+								</div>
+								<h4>Dr. Cooper</h4>
+								<p>Contrary to popular belief, Lorem Ipsum is not simple.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="works-item animated">
+								<a href="img/works/5.jpg"  class="prettyphoto">
+									<img src="img/works/tn5.jpg" class="img-responsive img-thumbnail" alt=""/>
+								</a>
+								<div class="works-social">
+									<a href="img/works/5.jpg" class="prettyphoto"><i class="fa fa-search br-red"></i></a>
+									<a href="#"><i class="fa fa-link br-black"></i></a>
+								</div>
+								<h4>Mac Admin</h4>
+								<p>Contrary to popular belief, Lorem Ipsum is not simple.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="works-item animated">
+								<a href="img/works/6.jpg"  class="prettyphoto">
+									<img src="img/works/tn6.jpg" class="img-responsive img-thumbnail" alt=""/>
+								</a>
+								<div class="works-social">
+									<a href="img/works/6.jpg" class="prettyphoto"><i class="fa fa-search br-red"></i></a>
+									<a href="#"><i class="fa fa-link br-black"></i></a>
+								</div>
+								<h4>Dashboard</h4>
+								<p>Contrary to popular belief, Lorem Ipsum is not simple.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="works-item animated">
+								<a href="img/works/7.jpg"  class="prettyphoto">
+									<img src="img/works/tn7.jpg" class="img-responsive img-thumbnail" alt=""/>
+								</a>
+								<div class="works-social">
+									<a href="img/works/7.jpg" class="prettyphoto"><i class="fa fa-search br-red"></i></a>
+									<a href="#"><i class="fa fa-link br-black"></i></a>
+								</div>
+								<h4>Olson</h4>
+								<p>Contrary to popular belief, Lorem Ipsum is not simple.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="works-item animated">
+								<a href="img/works/8.jpg"  class="prettyphoto">
+									<img src="img/works/tn8.jpg" class="img-responsive img-thumbnail" alt=""/>
+								</a>
+								<div class="works-social">
+									<a href="img/works/8.jpg" class="prettyphoto"><i class="fa fa-search br-red"></i></a>
+									<a href="#"><i class="fa fa-link br-black"></i></a>
+								</div>
+								<h4>Renata</h4>
+								<p>Contrary to popular belief, Lorem Ipsum is not simple.</p>
+							</div>
+						</div>
+					<!-- Row Ends -->
+					</div>
+					<!-- Pretty photo Ends -->
+				</div>
+				
+			<!-- Works Ends -->
+			
+			<!-- My Status Starts -->
+				<div class="status block text-center">
+					<!-- Heading-->
+					<div class="block-head">
+						<!-- Title --> 
+						<h2>Status</h2>
+						<!-- Title Para -->
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+					</div>
+					<!-- Status Row starts -->
+					<div class="row">	
+						<div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2">
+							<!-- Using Border -->
+							<div class="status-item">
+								<div class="item-head bor-red">
+									<!-- Countdown Timer -->
+									<h5 class="timer" data-from="0" data-to="19" data-speed="500" data-refresh-interval="5"></h5>
+								</div>
+								<div class="status-content">
+									<!-- Number Heading -->
+									<h4>100</h4>
+									<!-- Item Name -->
+									<p>Employee</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2">
+							<div class="status-item">
+								<div class="item-head bor-lblue ">
+									<h5 class="timer" data-from="0" data-to="29" data-speed="800" data-refresh-interval="50"></h5>
+								</div>
+								<div class="status-content">
+									<h4>10,000</h4>
+									<p>Visitors</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-4">
+							<div class="status-item">
+								<div class="item-head sleft bor-green">
+									<h5 class="timer" data-from="0" data-to="39" data-speed="800" data-refresh-interval="50"></h5>
+								</div>
+								<div class="status-content">
+									<h4>$4,85,447</h4>
+									<p>Revenue</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="status-item-large ">
+								<!-- Middle Item Without Timer -->
+								<h5>I<br/><i class="fa fa-heart red"></i><br/>MONEY</h5>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="status-item">
+								<div class="item-head sleft bor-pink">
+									<h5 class="timer" data-from="0" data-to="49" data-speed="800" data-refresh-interval="50"></h5>
+								</div>
+								<div class="status-content">
+									<h4>$3.425</h4>
+									<p>Profit</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">	
+						<div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2">
+							<div class="status-item">
+								<div class="item-head bor-orange">
+									<h5 class="timer" data-from="0" data-to="59" data-speed="800" data-refresh-interval="50"></h5>
+								</div>
+								<div class="status-content">
+									<h4>2.345%</h4>
+									<p>Growth</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2">
+							<div class="status-item">
+								<div class="item-head bor-brown">
+									<h5 class="timer" data-from="0" data-to="69" data-speed="800" data-refresh-interval="50"></h5>
+								</div>
+								<div class="status-content">
+									<h4>10,000</h4>
+									<p>Customer</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Row ends -->
+				</div>
+			
+			<!-- Status Ends -->
+			
+			<!-- Service Statrs -->
+				<div class="service block text-center">
+					<!-- Heading -->
+					<div class="block-head">
+						<!-- Title Header -->
+						<h2>Service</h2>
+						<!-- Title Para -->
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+					</div>
+					<!-- Service Row Starts -->
+					<div class="row">
+						<div class="col-md-4 col-sm-4">
+							<div class="service-item animated">
+								<!-- Image -->
+								<img src="img/service-1.png" class="img-responsive" alt="" />
+								<!-- Title -->
+								<h4>Web Design</h4>
+								<!-- Item Content -->
+								<p>The Rose Bowl was originally known as the Battle of the Flowers.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="service-item animated">
+								<img src="img/service-3.png" class="img-responsive" alt=""/>
+								<h4>Mail Sys</h4>
+								<p>The Rose Bowl was originally known as the Battle of the Flowers.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="service-item animated">
+								<img src="img/service-4.png" class="img-responsive" alt="" />
+								<h4>Mobile App</h4>
+								<p>The Rose Bowl was originally known as the Battle of the Flowers.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2">
+							<div class="service-item animated">
+								<img src="img/service-2.png" class="img-responsive" alt="" />
+								<h4>Developement</h4>
+								<p>The Rose Bowl was originally known as the Battle of the Flowers.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2">
+							<div class="service-item animated">
+								<img src="img/service-5.png" class="img-responsive" alt="" />
+								<h4>Developement</h4>
+								<p>The Rose Bowl was originally known as the Battle of the Flowers.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Row Ends -->
+				</div>
+			
+			<!-- Service Ends -->
+			
+			<!-- Testimonials Starts -->
+				<div class="testimonials block">
+					<!-- Heading -->
+					<div class="block-head text-center">
+						<!-- Title Header -->
+						<h2>Testimonials</h2>
+						<!-- Title para -->
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+					</div>
+					<!-- Testimonial Row Starts -->
+					<div class="row">
+						<div class="col-md-4">
+							<div class="test-item test-one animated">
+								<!-- Testimonial Content -->
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum is not.Contrary to popular belief."</p>
+								<!-- Author Name-->
+								<h6>Clinaldus PageMaker</h6>
+								<!-- Image -->
+								<img src="img/test-1.jpg" class="img-circle img-responsive img-thumbnail" alt="" />
+								<!-- Icon -->
+								<div class="test-meta">
+									<a href="#"><i class="fa fa-star red"></i>10</a>
+									<a href="#"><i class="fa fa-share-square-o lblue"></i>15</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="test-item test-two animated">
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum is not.Contrary to popular belief."</p>
+								<h6>PadusBonet Malorum</h6>
+								<img src="img/test-2.jpg" class="img-circle img-responsive img-thumbnail" alt="" />
+								<div class="test-meta">
+									<a href="#"><i class="fa fa-star red"></i>10</a>
+									<a href="#"><i class="fa fa-share-square-o lblue"></i>15</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="test-item test-three animated">
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum is not.Contrary to popular belief."</p>
+								<h6>MChoRich Clintock</h6>
+								<img src="img/test-3.jpg" class="img-circle img-responsive img-thumbnail" alt="" />
+								<div class="test-meta">
+									<a href="#"><i class="fa fa-star red"></i>10</a>
+									<a href="#"><i class="fa fa-share-square-o blue"></i>15</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Row Ends -->
+				</div>
+				
+			<!-- Testimonials Ends -->
+			
+			<!-- Friends Block Starts -->
+				<div class="friend block text-center">
+					<!-- Heading -->
+					<div class="block-head">
+						<!-- Title -->
+						<h2>Friends</h2>
+						<!-- Title Para -->
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="friend-item animated">
+								<!-- Image -->
+								<img src="img/friend-1.jpg" class="img-responsive img-circle img-thumbnail" alt=""/> 
+								<!-- Item Title -->
+								<h3>Helen Green</h3>
+								<!-- Designation -->
+								<h4>Quality Analyst</h4>
+								<!-- Icon with click function -->
+								<a href="#" class="br-red fclick"><i class="fa fa-user"></i></a>
+								<!-- Social media Starts -->
+								<div class="friend-social">
+									<a href="#"><i class="fa fa-facebook br-blue"></i></a>
+									<a href="#"><i class="fa fa-twitter br-lblue"></i></a>
+									<a href="#"><i class="fa fa-google-plus br-red"></i></a>
+								</div>
+								<!-- Social media Ends -->
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="friend-item animated">
+								<img src="img/friend-2.jpg" class="img-responsive img-circle img-thumbnail" alt=""/>
+								<h3>Carla Briggs</h3>
+								<h4>Project Manager</h4>
+								<a href="#" class="br-red fclick"><i class="fa fa-user"></i></a> 
+								<!-- Social media Starts -->
+								<div class="friend-social">
+									<a href="#"><i class="fa fa-facebook br-blue"></i></a>
+									<a href="#"><i class="fa fa-twitter br-lblue"></i></a>
+									<a href="#"><i class="fa fa-google-plus br-red"></i></a>
+								</div>
+								<!-- Social media Ends -->
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="friend-item animated">
+								<img src="img/friend-3.jpg" class="img-responsive img-circle img-thumbnail" alt=""/>
+								<h3>Myra Flowers</h3>
+								<h4>Team Lead</h4>
+								<a href="#" class="br-red fclick"><i class="fa fa-user"></i></a>
+								<!-- Social media Starts -->
+								<div class="friend-social">
+									<a href="#"><i class="fa fa-facebook br-blue"></i></a>
+									<a href="#"><i class="fa fa-twitter br-lblue"></i></a>
+									<a href="#"><i class="fa fa-google-plus br-red"></i></a>
+								</div>
+								<!-- Social media Ends -->
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="friend-item animated">
+								<img src="img/friend-4.jpg" class="img-responsive img-circle img-thumbnail" alt=""/>
+								<h3>Brad Webster</h3>
+								<h4>Senior Executive</h4>
+								<a href="#" class="br-red fclick"><i class="fa fa-user"></i></a> 
+								<!-- Social media Starts -->
+								<div class="friend-social">
+									<a href="#"><i class="fa fa-facebook br-blue"></i></a>
+									<a href="#"><i class="fa fa-twitter br-lblue"></i></a>
+									<a href="#"><i class="fa fa-google-plus br-red"></i></a>
+								</div>
+								<!-- Social media Ends -->
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- Friends Block Ends -->
+			
+			<!-- Profiles Starts -->
+				<div class="profiles block text-center">
+					<!-- Heading -->
+					<div class="block-head">
+						<!-- Title --> 
+						<h2>Profile</h2>
+						<!-- Title Para -->
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+					</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="profile-content"> 
+									<div class="profile-inner">
+										<div class="row">
+											<div class="col-md-3 col-sm-3">
+												<div class="profile-detail">
+													<!-- profile Image -->
+													<img src="img/profile-1.jpg" class="img-responsive img-circle img-thumbnail" alt="" />
+												</div>
+											</div>
+											<div class="col-md-9 col-sm-9">
+												<div class="profile-detail">
+													<!-- Responsive Table Starts -->
+													<div class="table-responsive">
+														<table class="table table-condensed">
+															<tr>
+																<!-- Used for left border -->
+																<td class="tborder"><strong>Name</strong></td>
+																<!-- Table Item -->
+																<td>Mic Makew</td>
+																<!-- Table Item -->
+																<td class="tborder"><strong>Email</strong></td>
+																<!-- Email Link -->
+																<td><a href="mailto:mic@gmail.com" target="_top">mic@gmail.com</a></td>
+															</tr>
+															<tr>
+																<td class="tborder"><strong>Education</strong></td>
+																<td>B.E(ECE)</td>
+																<td class="tborder"><strong>Hobbies</strong></td>
+																<td>Chess</td>
+															</tr>
+															<tr>
+																<td class="tborder"><strong>Mobile</strong></td>
+																<td>2200-670-358</td>
+																<td class="tborder"><strong>Location</strong></td>
+																<td>Bangalore</td>
+															</tr>
+														</table>
+														<!-- Table Ends -->
+													</div>
+												</div>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="profile-content">
+									<div class="profile-inner">
+										<div class="row">
+											<div class="col-md-3 col-sm-3">
+												<div class="profile-detail">
+													<!-- profile Image -->
+													<img src="img/profile-2.jpg" class="img-responsive img-circle img-thumbnail" alt="" />
+												</div>
+											</div>
+											<div class="col-md-9 col-sm-9">
+												<div class="profile-detail">
+													<!-- Responsive Table Starts -->
+													<div class="table-responsive">
+														<table class="table table-condensed">
+															<tr>
+																<!-- Used for left border -->
+																<td class="tborder"><strong>Name</strong></td>
+																<!-- Table Item -->
+																<td>Ram Akil</td>
+																<!-- Table Item -->
+																<td class="tborder"><strong>Email</strong></td>
+																<!-- Email Link -->
+																<td><a href="mailto:akil@gmail.com" target="_top">akil@gmail.com</a></td>
+															</tr>
+															<tr>
+																<td class="tborder"><strong>Education</strong></td>
+																<td>B.E(CSE)</td>
+																<td class="tborder"><strong>Hobbies</strong></td>
+																<td>Cricket</td>
+															</tr>
+															<tr>
+																<td class="tborder"><strong>Mobile</strong></td>
+																<td>2200-670-358</td>
+																<td class="tborder"><strong>Location</strong></td>
+																<td>Madurai</td>
+															</tr>
+														</table>
+														<!-- Table Ends -->
+													</div>
+												</div>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				
+			<!-- Profiles Ends -->
+			
+			<!-- Blog Starts -->
+				<div class="be block">
+					<!-- Heading -->
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<div class="blog">
+								<!-- Title -->
+								<h2>Blog</h2>
+								<div class="blog-item">
+									<!-- Heading -->
+									<h3><a href="#">Various versions have evolved over the years of accident.</a></h3>
+									<!-- Name -->
+									<a href="#"><i class="fa fa-user"></i> <span>Florida Cruse</span></a>
+									<!-- Folder Name -->
+									<a href="#"><i class="fa fa-folder"></i> <span>Gallery</span></a>
+									<!-- Comments -->
+									<a href="#"><i class="fa fa-comments"></i>  <span>2 Comments</span></a>
+								</div>
+								<div class="blog-item">
+									<h3><a href="#">Sed ut perspiciatis unde omnis iste natus error thatis.</a></h3>
+									<a href="#"><i class="fa fa-user"></i> <span>Tom Kinleyler</span></a>
+									<a href="#"><i class="fa fa-folder"></i> <span>Setting</span></a>
+									<a href="#"><i class="fa fa-comments"></i>  <span>4 Comments</span></a>
+								</div>
+								<div class="blog-item">
+									<h3><a href="#">At vero eos et accusamus et iusto odio dignissimos her.</a></h3>
+									<a href="#"><i class="fa fa-user"></i> <span>Riyas Sterins</span></a>
+									<a href="#"><i class="fa fa-folder"></i> <span>Explorer</span></a>
+									<a href="#"><i class="fa fa-comments"></i> <span>3 Comments</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="experience">
+								<!-- Title -->
+								<h2>Experience</h2>
+								<div class="exp-item">
+									<!-- Heading -->
+									<h4>HTML</h4>
+									<!-- Values -->
+									<p class="pull-right">95%</p>
+									<div class="clearfix"></div>
+									<!-- Progress Bar -->
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" data-limit="95">
+										</div>
+									</div>
+								</div>
+								<div class="exp-item">
+									<h4>CSS</h4>
+									<p class="pull-right">80%</p>
+									<div class="clearfix"></div>
+									<div class="progress">
+										<div class="progress-bar progress-bar-info" role="progressbar" data-limit="80">
+										</div>
+									</div>
+								</div>
+								<div class="exp-item">
+									<h4>JQuery</h4>
+									<p class="pull-right">65%</p>
+									<div class="clearfix"></div>
+									<div class="progress">
+										<div class="progress-bar progress-bar-warning" role="progressbar" data-limit="60">
+										</div>
+									</div>
+								</div>
+								<div class="exp-item">
+									<h4>Java Script</h4>
+									<p class="pull-right">55%</p>
+									<div class="clearfix"></div>
+									<div class="progress">
+										<div class="progress-bar progress-bar-danger" role="progressbar" data-limit="55">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			<!-- Blog Block Ends -->
+			
+			<!-- Love Starts -->
+			<div class="love-nation block text-center ">
+				<div class="love animated">
+					<!-- Title -->
+					<h2>Made With <i class="fa fa-heart red"></i> In India</h2>
+				</div>
+			</div>
+			
+			<!-- Love Ends -->
+			
+			<!-- Contacts Starts -->
+				<div class="contact block">
+					<!-- Heading --> 
+					<div class="block-head text-center">
+						<!-- Title -->
+						<h2>Contact</h2>
+						<!-- Title Para -->
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text.  It has roots in a piece of classical Latin literature from 45 BC.</p>
+					</div>
+					<!-- Contact Number -->
+					<h3 class="con-num animated"><span><i class="fa fa-mobile red"></i></span>737<span class="red">-</span>3211<span class="red">-</span>2260</h3>
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="contact-item animated">
+								<div class="cimg">
+									 <!-- Icon -->
+									<i class="fa fa-cloud"></i>
+								</div>
+								<div class="ccontent">
+									<!-- Heading -->
+									<h4>Corporate Office</h4>
+									<!-- Sub Heading -->
+									<h5>E.City, Bangalore</h5>
+									<!-- Para -->
+									<p>Since 1980's</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="contact-item animated">
+								<div class="cimg">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="ccontent">
+									<h4>Call Us</h4>
+									<h5>+00-522-6703-3582</h5>
+									<p>Any Time</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="contact-item animated">
+								<div class="cimg">
+									<i class="fa fa-envelope"></i> 
+								</div>
+								<div class="ccontent">
+									<h4>Mail Us</h4>
+									<h5>akila@gmail.com</h5>
+									<p>Today</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="contact-item animated">
+								<div class="cimg">
+									<i class="fa fa-user"></i> 
+								</div>
+								<div class="ccontent">
+									<h4>Business Hours</h4>
+									<h5>9.30 AM to 5.30 PM</h5>
+									<p>Morning</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>	
+					<!-- Social Media -->
+					<div class="contact-social text-center animated">
+						<a href="#"><i class="fa fa-facebook br-blue"></i></a>&nbsp;&nbsp;
+						<a href="#"><i class="fa fa-twitter br-lblue"></i></a>&nbsp;&nbsp;
+						<a href="#"><i class="fa fa-google-plus br-orange"></i></a>&nbsp;&nbsp;
+						<a href="#"><i class="fa fa-pinterest br-red"></i></a>
+					</div>
+					<!-- Footer Starts -->
+					
+					<!-- Bottom Navigation Bar -->
+					<div class="bottom-nav text-center">
+						<ul>
+							<li><a href="#.home">Home</a><span>.</span></li>
+							<li><a href="#.works">Works</a><span>.</span></li>
+							<li><a href="#.status">Status</a><span>.</span></li>
+							<li><a href="#.service">Service</a><span>.</span></li>
+							<li><a href="#.testimonials">Testimonials</a></li>
+						</ul>
+					</div>
+					<footer>
+						 <!-- Footer Link -->
+						<p>Copyright &copy; 2013 <a href="#">Site Name</a></p>
+					</footer>
+					
+						<!-- Scroll to top  -->
+						 <!-- Icon with Link --> 
+						<span class="gotop"><a href="#"><i class="fa fa-chevron-up"></i></a></span>
+						
+					<!-- Footer Ends -->
+				</div>
+			
+			<!-- Contacts Ends -->
+		</div>
+			
+		<!-- Form starts -->
+		
+		<!-- Contact Form with Sliding-->
+				<div class="slide-bar">
+					<div class="contact-form br-white">
+						<!-- Title -->
+						<h2>Contact Form</h2>
+						<!-- Form Starts -->
+						<form class="form" role="form">
+							<div class="form-group">
+								<!-- Form Label -->
+								<label for="InputName">Name</label>
+								<!-- For Input -->
+								<input type="text" class="form-control" id="InputName" placeholder="Enter the Name">
+							</div>
+							<div class="form-group">
+								<label for="InputEmail">Email</label>
+								<input type="text" class="form-control" id="InputEmail" placeholder="Enter the Email">
+							</div>
+							<div class="form-group">
+								<label for="InputTextarea">Comments</label>
+								<!-- Text Area -->
+								<textarea class="form-control" rows="3" id="InputTextarea"></textarea>
+							</div>
+							<!-- Contact Buttons -->
+							<div class="form-group">
+								<!-- Button -->
+								<button type="submit" class="btn btn-danger btn-sm">Submit</button>&nbsp;
+								<button type="submit" class="btn btn-default btn-sm">Reset</button>
+							</div>
+						</form>
+						<div class="slider-button">
+							<!-- Link with Image -->
+							<a href="#"><img src="img/contact.png" class="img-responsive" alt=""/></a>
+						</div>
+					</div>
+				</div>	
+		<!-- Form Ends -->
+		
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Pretty Photos -->
+		<script src="js/jquery.prettyPhoto.js"></script>
+		<!-- Arbitary Anchor -->
+		<script type="text/javascript" src="js/jquery.arbitrary-anchor.js"></script>
+		<!-- Waypoints  -->
+		<script src="js/waypoints.min.js"></script>
+		<!-- Counter  -->
+		<script src="js/jquery.countTo.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+	</body>	
 </html>
