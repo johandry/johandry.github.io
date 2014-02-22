@@ -275,6 +275,14 @@ header .head-left .head-social a i{
 	border-radius:100px;
 }
 
+header .head-left .btn-group .btn{
+	margin-top: 50px;
+	border-radius:5px;
+	padding:6px 11px;
+	height:35px;
+	color:#999;
+}
+
 header .head-right{
 	margin-top:40px;
 }
