@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Maps API Demo</title>
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCK-TKo_sC67F6AHKHOIMrXAgr5wt0oEIo&sensor=false"></script>
+</head>
+<body>
+	<script>
+		var myCoords = new google.maps.LatLng(56.4, -115);
+		function mapSetup() {
+			var mapSettings = {
+				center: myCoords,
+				zoom: 7,
+				mapTypeId: google.maps.MapTypeId.HYBRID
+			};
+			var myMap = new google.maps.map(document.getElementById("mapCanvas"), mapSettings);
+		}
+		google.maps.event.addDomListener(window, 'load', mapSetup);
+	</script>
+	<div id="mapCanvas" style="width: 1000px; height: 760px;"></div>
+</body>
+</html>
