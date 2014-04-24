@@ -1184,6 +1184,22 @@ div.ppt {
 	transition: background 1s ease;
 }
 
+.contact .contact-social a img{
+	display:inline-block;
+	margin-bottom: 2px;
+	height:50px;
+	width:50px;
+	line-height:50px;
+	color:#fff;
+	font-size:16px;
+	border-radius:3px;
+	-webkit-transition: background 1s ease;
+	-moz-transition: background 1s ease;
+	-o-transition: background 1s ease;
+	-ms-transition: background 1s ease;
+	transition: background 1s ease;
+}
+
 .contact .contact-social a i:hover{
 	background:#555 !important;
 	-webkit-transition: background 1s ease;
