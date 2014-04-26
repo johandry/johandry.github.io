@@ -38,6 +38,16 @@ $('.skill-item').waypoint(function(down) {
 	$(this).addClass('bounceIn');
 }, { offset: '70%' });
 
+$('.progress-bar').waypoint(function(down) {
+	if(!$(this).hasClass("pfinish"))
+	{	
+		var $pvalue = $(this).attr("data-limit");
+		$(this).animate({
+			width: $pvalue+"%" },800);
+		$(this).addClass('pfinish');
+	}
+},{ offset: '100%' });
+
 /* Experience Item */
 
 $('.exp-item').waypoint(function(down) {

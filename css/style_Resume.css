@@ -374,6 +374,27 @@ header .head-right .head-obj p{
 	margin-bottom:10px;
 }
 
+header .head-button{
+	margin-top: 35px;
+	text-align: center;
+}
+
+header .head-button .btn-group{
+	margin-right:10px;
+}
+
+header .head-button  i{
+	font-size:15px;
+	text-align:center;
+}
+
+header .head-button .btn-group .btn{
+	border-radius:5px;
+	padding:6px 11px;
+	height:35px;
+	color:#999;
+}
+
 /* Header Ends */
 
 /* Education Starts */
@@ -382,6 +403,7 @@ header .head-right .head-obj p{
 	border-bottom:1px solid #eee;
 }
 
+.skills .navigation,
 .education .navigation{
 	font-size:15px;
 	margin-bottom:20px;
@@ -389,10 +411,12 @@ header .head-right .head-obj p{
 	text-align:right;
 }
 
+.skills .navigation li,
 .education .navigation li{
 	display:inline;
 }
 
+.skills .navigation  li a,
 .education .navigation  li a{
 	padding:5px 12px 5px 12px;
 	border-radius:3px;
@@ -402,16 +426,19 @@ header .head-right .head-obj p{
 	font-weight:bold;
 }
 
+.skills .navigation  li a:hover,
 .education .navigation  li a:hover{
 	border-radius:3px;
 	background:#f75353;
 }
 
+.skills .navigation  li.active a,
 .education .navigation  li.active a{
 	background:#d22c2c;
 	text-decoration:none;
 }
 
+.skills .tab-content,
 .education .tab-content{
 	opacity:0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -427,6 +454,7 @@ header .head-right .head-obj p{
     -o-animation-delay: 0s;
 }
 
+.skills .tab-content .tab-pane,
 .education .tab-content .tab-pane {
 	max-width:550px;
 	border:1px solid #ddd;
@@ -435,17 +463,26 @@ header .head-right .head-obj p{
 	padding:23px;
 }
 
+.skills .tab-content .tab-pane h3,
 .education .tab-content .tab-pane h3{
 	font-size:20px;
 	margin-bottom:14px;
 }
 
+.skills .tab-content .tab-pane h4,
+.education .tab-content .tab-pane h4{
+	margin-bottom:10px;
+	font-size:15px;
+}
+
+.skills .tab-content .tab-pane h5,
 .education .tab-content .tab-pane h5{
 	color:#999;
 	margin-bottom:10px;
 	font-size:15px;
 }
 
+.skills .tab-content .tab-pane p,
 .education .tab-content .tab-pane p{
 	font-size:13px;
 }
@@ -458,6 +495,37 @@ header .head-right .head-obj p{
 	border-bottom:1px solid #eee;
 }
 
+.skills .skill-item{
+	margin-bottom:10px;
+}
+	
+.skills .skill-item h4{
+	margin:0px;
+	margin-bottom:10px;
+	display:inline-block;
+	font-size:17px;
+	font-weight:bold;
+}
+
+.skills .skill-item h4 span{
+	font-size: 10px;
+	font-weight: lighter;
+}
+
+.skills .skill-item p{
+	font-size:12px;
+}
+
+.skills .skill-item .progress{
+	border:1px solid #ddd;
+	padding:3px;
+	background:#fff;
+	box-shadow:none;
+	margin-bottom:0px;
+	height: 12px;
+}
+
+/*
 .skills .skill-item{
 	margin-bottom:25px;
 	opacity:0;
@@ -489,6 +557,7 @@ header .head-right .head-obj p{
 	max-width:250px;
 	margin:0 auto;
 }
+*/
 
 /* Skills Ends */
 
