@@ -591,6 +591,12 @@ header .head-button .btn-group .btn{
 	margin-bottom:5px;
 }
 
+.experience .exp-item .item-img img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .experience .exp-item .item-content{
 	border:1px solid #ddd;
 	max-width:200px;
@@ -635,6 +641,20 @@ header .head-button .btn-group .btn{
 .experience .exp-item .item-content  h5{
 	font-size:12px;
 	margin-bottom:5px;
+}
+
+.experience h2{
+	width: 100%; 
+	text-align: center; 
+	border-bottom: 1px solid #000; 
+	line-height: 0.1em;
+	margin: 20px 0 10px; 	
+}
+
+.experience h2 span{
+	background:#fff; 
+	padding:0 10px; 
+	font-size: 15px;
 }
 
 /* Experience Ends */
