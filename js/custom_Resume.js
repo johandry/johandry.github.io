@@ -1,3 +1,17 @@
+ /* Catch event on Resume buttons and send them to Google Analytics */
+
+ 	$('#printResumeBtnSmall').on('click', function() {
+  	ga('send', 'event', 'button', 'click', 'print');
+	});
+ 	$('#printResumeBtnLarge').on('click', function() {
+  	ga('send', 'event', 'button', 'click', 'print');
+	});
+ 	$('#downloadResumeBtnSmall').on('click', function() {
+  	ga('send', 'event', 'button', 'click', 'download');
+	});
+ 	$('#downloadResumeBtnLarge').on('click', function() {
+  	ga('send', 'event', 'button', 'click', 'download');
+	});
  /* Click Function for Social media in Head Block */
 	
 $(".head-left a").click(function(e){
